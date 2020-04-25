@@ -241,7 +241,7 @@ a:hover {
         margin-bottom: 0.5rem;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     input, textarea {
     font: 1em sans-serif;
     width: 250px;
