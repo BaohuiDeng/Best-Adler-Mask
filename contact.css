@@ -40,7 +40,6 @@ form div+div {
 label {
     /* 确保所有label大小相同并正确对齐 */
     display: inline-block;
-    width: 90px;
     text-align: right;
     color: gray;
 }
