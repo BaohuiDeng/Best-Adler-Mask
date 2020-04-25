@@ -241,7 +241,14 @@ a:hover {
         margin-bottom: 0.5rem;
     }
 }
-
+@media screen and (max-width: 768px) {
+    input, textarea {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+}
 @media screen and (max-width: 768px) {
     .boxcontainer {
         display: block;
