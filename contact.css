@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: -3rem;
+    font-size: 25px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: #24262b;
+}
+
+.fa-envelope {
+    margin: 0 10px;
+    color: #b79b6c;
+}
+
+.fa-copyright {
+    color: #a37e66;
+}
+
+form {
+    margin: 8rem auto;
+    width: 400px;
+    /* 显示表单的轮廓 */
+    padding: 2em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    border: 1px solid gray;
+}
+
+form div+div {
+    margin-top: 1em;
+}
+
+label {
+    /* 确保所有label大小相同并正确对齐 */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    color: gray;
+}
+
+input,
+textarea {
+    /* 确保所有文本输入框字体相同
+     textarea默认是等宽字体 */
+    font: 1em sans-serif;
+    /* 使所有文本输入框大小相同 */
+    width: 300px;
+    box-sizing: border-box;
+    /* 调整文本输入框的边框样式 */
+    border: 1px solid gray;
+}
+
+input:focus,
+textarea:focus {
+    /* 给激活的元素一点高亮效果 */
+    border-color: #000;
+}
+
+textarea {
+    /* 使多行文本输入框和它们的label正确对齐 */
+    vertical-align: top;
+    /* 给文本留下足够的空间 */
+    height: 5em;
+}
+
+.button {
+    /* 把按钮放到和文本输入框一样的位置 */
+    padding-left: 90px;
+    /* 和label的大小一样 */
+}
+
+button {
+    /* 这个外边距的大小与label和文本输入框之间的间距差不多 */
+    margin-left: .5em;
+    color: white;
+    background: #b79b6c;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+    color: white;
+    background-color: #b79b6c;
+    cursor: pointer;
+    opacity: 0.8;
+    border: none;
+}
+
+.container a:hover {
+    color: #e2a97b;
+}
+
+.bg-img {
+    /* The image used 给图片加一层黑色layer直接用linear gradient 就行不需要
+  用到overlay*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("landing.jpg");
+    min-height: 300px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-width: 1000px; */
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+.container {
+    margin: 10px;
+    width: auto;
+    float: right;
+    position: relative;
+    max-width: 1000px;
+}
+
+.topnav {
+    overflow: hidden;
+    font-weight: bold;
+}
+
+
+/* Navbar links */
+
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #b79b6c;
+}
+
+.boxcontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.box {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 6rem 4rem;
+    padding: 1rem;
+    color: white;
+    background-color: #24262b;
+    opacity: 0.7;
+    width: 100%;
+    height: 250px;
+}
+
+.general {
+    background: #24262b;
+    color: #333;
+    opacity: 0.9;
+    margin-top: 3rem;
+}
+
+.boxtext {
+    text-align: justify;
+    white-space: nowrap;
+}
+
+.boxtext h4,
+h3 {
+    margin: 1rem;
+}
+
+.boxtext .head {
+    font-size: 2rem;
+}
+
+.boxtext h3 {
+    margin-top: 1.5rem;
+}
+
+.footer {
+    border-top: 1px solid gray;
+    background: #f4f4f4;
+    height: 70px;
+    color: black;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.boxtext a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #a37e66;
+}
+
+@media screen and (max-width: 1000px) {
+    .boxcontainer {
+        display: block;
+        justify-content: center;
+        width: 90%;
+        margin-bottom: 1rem;
+        position: absolute;
+        top: -1rem;
+    }
+    .box {
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 1rem;
+        color: white;
+        background-color: #24262b;
+        width: 60%;
+        height: 250px;
+        margin-top: 3rem;
+        opacity: 0.7;
+        margin-bottom: 3rem;
+    }
+    .boxtext h4,
+    h3 {
+        margin: .8rem;
+        overflow: scroll;
+    }
+    .general {
+        margin-top: -1rem;
+        height: 650px;
+        position: relative;
+        background: #24262b;
+        opacity: 0.9;
+    }
+    .footer {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .boxcontainer {
+        display: block;
+        justify-content: center;
+        width: 90%;
+        margin-bottom: 1rem;
+        position: absolute;
+        top: -1rem;
+    }
+    .box {
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 1rem;
+        color: white;
+        background-color: #24262b;
+        width: 60%;
+        height: 240px;
+        margin-top: 3rem;
+        opacity: 0.7;
+        margin-bottom: 3rem;
+        margin-left: 6%;
+    }
+    .boxtext h4,
+    h3 {
+        margin: .8rem;
+        overflow: scroll;
+    }
+    .general {
+        margin-top: -1rem;
+        height: 650px;
+        position: relative;
+        background: #24262b;
+        opacity: 0.9;
+    }
+    .footer {
+        margin-bottom: 0.5rem;
+        padding-top: 2rem;
+    }
+    form {
+        margin: 4rem auto;
+        width: 300px;
+        /* 显示表单的轮廓 */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+    .labelMessage {
+        margin-left: -2rem;
+    }
+    .labelName {
+        margin-left: -3rem;
+    }
+    .labelEmail {
+        margin-left: -1rem;
+    }
+    .header {
+        font-size: 15px;
+        margin-bottom: -1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    label {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    form {
+        margin: 8rem auto;
+        width: 300px !important;
+        /* 显示表单的轮廓 */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+    label {
+        /* 确保所有label大小相同并正确对齐 */
+        display: inline-block;
+        width: 80px;
+        text-align: right;
+    }
+    .labelMessage {
+        margin-left: -1rem;
+    }
+    .labelName {
+        margin-left: -2rem;
+    }
+    .labelEmail {
+        margin-left: -1rem;
+    }
+    .boxtext .head {
+        font-size: .8rem;
+    }
+}

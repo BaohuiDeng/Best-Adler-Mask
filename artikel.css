@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fa-copyright {
+    color: #a37e66;
+}
+
+.container a:hover {
+    color: #e2a97b;
+}
+
+.bg-img {
+    /* The image used 给图片加一层黑色layer直接用linear gradient 就行不需要
+    用到overlay*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("landing.jpg");
+    min-height: 300px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-width: 1000px; */
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+.container {
+    margin: 10px;
+    width: auto;
+    float: right;
+    position: relative;
+    max-width: 1000px;
+}
+
+.topnav {
+    overflow: hidden;
+    font-weight: bold;
+}
+
+
+/* Navbar links */
+
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: #b79b6c;
+}
+
+.carousel-container {
+    margin-top: 60px;
+    max-width: 500px;
+    margin-left: 90px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 30%;
+    z-index: 10;
+    left: 3%;
+    font-size: 30px;
+    color: #e2a97b;
+    cursor: pointer;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 30%;
+    z-index: 10;
+    right: 3%;
+    font-size: 30px;
+    color: #e2a97b;
+    cursor: pointer;
+}
+
+#prevBtn:hover {
+    opacity: 0.8;
+}
+
+#nextBtn:hover {
+    opacity: 0.8;
+}
+
+.artikel {
+    display: flex;
+    position: relative;
+}
+
+.information {
+    margin-top: 60px;
+    right: 28%;
+    text-align: left;
+    margin-left: 15%;
+}
+
+.information h1,
+p,
+ul {
+    padding: 15px;
+}
+
+.information ul {
+    list-style-position: inside;
+}
+
+.information-text {
+    font-size: 27px;
+    width: 350px;
+    color: #24262b;
+}
+
+.lieferbar {
+    border: 1px dotted #a37e66;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.fa-truck {
+    color: #a37e66;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid #a37e66;
+}
+
+th {
+    height: 50px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+    color: #a37e66;
+}
+
+.personal {
+    display: flex;
+}
+
+.foto img {
+    max-width: 120px;
+    max-height: 150px;
+    width: 100%;
+}
+
+.foto-intro p {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+.foto-intro h3 {
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.beratung {
+    background: white;
+    width: 100%;
+    margin-top: 9rem;
+}
+
+.beratung-text {
+    margin: 40px auto;
+}
+
+.boxcontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.box {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 6rem 4rem;
+    padding: 1rem;
+    color: white;
+    background-color: #24262b;
+    opacity: 0.7;
+    width: 100%;
+    height: 250px;
+}
+
+.general {
+    background: #24262b;
+    color: #333;
+    opacity: 0.9;
+    margin-top: 3rem;
+}
+
+.boxtext {
+    text-align: justify;
+    white-space: nowrap;
+}
+
+.boxtext h4,
+h3 {
+    margin: 1rem;
+}
+
+.boxtext .head {
+    font-size: 2rem;
+}
+
+.boxtext h3 {
+    margin-top: 1.5rem;
+}
+
+.containerbox {
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.descriptionTitle {
+    text-align: center;
+    border-top: 2px solid #a37e66;
+    justify-content: center;
+    width: 140px;
+    margin: 0 45%;
+    /*margin:0 40%; */
+}
+
+.descriptionTitle>h3 {
+    text-align: center;
+}
+
+.description-text {
+    margin-top: 3rem;
+    color: #24262b;
+    justify-content: center;
+    width: 100%;
+}
+
+.paragraph-text {
+    display: inline-block;
+    margin: 0 15%;
+}
+
+.description-text p {
+    text-align: left;
+    margin: -4px auto;
+}
+
+.box {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 6rem 4rem;
+    padding: 1rem;
+    color: white;
+    background-color: #24262b;
+    opacity: 0.7;
+    width: 100%;
+    height: 250px;
+}
+
+.footer {
+    border-top: 1px solid gray;
+    background: #f4f4f4;
+    height: 70px;
+    color: black;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.boxtext a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #a37e66;
+}
+
+@media screen and (max-width: 1100px) {
+    .carousel-container {
+        margin: 2rem auto;
+    }
+    .carousel-div img {
+        resize: both;
+        width: 500px;
+        height: auto;
+    }
+    .carousel-slide {
+        width: 500px;
+    }
+    .carousel-container {
+        width: 500px;
+    }
+}
+
+
+/* responsive*/
+
+@media screen and (max-width: 1024px) {
+  
+    .descriptionTitle {
+        width: 140px;
+        margin: 0 45%;
+        border-top: 2px solid #a37e66
+    }
+    .containerbox {
+        text-align: center;
+        margin: 6rem auto;
+    }
+    .description-text {
+        margin-top: 1rem;
+    }
+    table {
+        width: 80%;
+    }
+    .lieferbar {
+        width: 60%;
+    }
+    .carousel-div img {
+        resize: both;
+        width: 500px;
+        height: auto;
+    }
+    .carousel-slide {
+        width: 500px;
+    }
+    .carousel-container {
+        width: 500px;
+    }*/
+}
+
+@media screen and (max-width: 900px) {
+    .artikel {
+        display: flex;
+        flex-direction: column;
+    }
+    .beratung {
+        margin-left: 20%;
+    }
+    .information {
+        margin-left: 20%;
+    }
+    .descriptionTitle {
+        width: 140px;
+        margin: 0 28%;
+        border-top: 2px solid #a37e66
+    }
+     .carousel-div img {
+        resize: both;
+        width: 500px;
+        height: auto;
+    }
+    .carousel-slide {
+        width: 500px;
+    }
+    .carousel-container {
+        width: 500px;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .descriptionTitle {
+        width: 140px;
+        text-align: center;
+        border-top: 2px solid #a37e66;
+        justify-content: center;
+        margin: 0 40%;
+    }
+    .description-text {
+        margin-top: 3rem;
+    }
+    .boxcontainer {
+        display: block;
+        justify-content: center;
+        width: 90%;
+        margin-bottom: 1rem;
+        position: absolute;
+        top: -1rem;
+    }
+    .box {
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 1rem;
+        color: white;
+        background-color: #24262b;
+        width: 60%;
+        height: 250px;
+        margin-top: 3rem;
+        opacity: 0.7;
+        margin-bottom: 3rem;
+    }
+    .boxtext h4,
+    h3 {
+        margin: .8rem;
+        overflow: scroll;
+    }
+    .general {
+        margin-top: -1rem;
+        height: 650px;
+        position: relative;
+        background: #24262b;
+        opacity: 0.9;
+    }
+    .footer {
+        margin-bottom: 0.5rem;
+    }
+    .information {
+        margin-left: 8%;
+    }
+    .beratung {
+        background: white;
+        margin-left: 0;
+        margin-bottom: 70px;
+        margin-top: 7rem;
+    }
+    .carousel-container {
+        margin: 60px auto;
+        width: 500px;
+    }
+    .carousel-slide {
+        width: 500px;
+    }
+    .carousel-slide img {
+        resize: both;
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .information,
+    .beratung {
+        margin-left: 4%;
+    }
+    .descriptionTitle {
+        width: 140px;
+        margin: 0 33%;
+        border-top: 2px solid #a37e66;
+    }
+    .containerbox {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    .description-text {
+        margin-top: 1rem;
+    }
+    .carousel-div img {
+        resize: both;
+        width: 300px;
+        height: auto;
+    }
+    .carousel-slide {
+        width: 300px;
+    }
+    .carousel-container {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .information {
+        margin-left: 4%;
+    }
+    .beratung {
+        margin-left: 8%;
+    }
+    .descriptionTitle {
+        width: 140px;
+        text-align: center;
+        border-top: 2px solid #a37e66;
+        justify-content: center;
+        margin: 0 35%;
+    }
+    .containerbox {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    .carousel-div img {
+        resize: both;
+        width: 300px;
+        height: 300px;
+    }
+    .carousel-slide {
+        width: 300px;
+    }
+    .carousel-container {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .information {
+        margin-left: 4%;
+    }
+    .beratung {
+        margin-left: 0;
+    }
+    .containerbox {
+        margin-top: 3rem;
+    }
+    .description-text {
+        margin-top: 1rem;
+    }
+    .descriptionTitle {
+        width: 140px;
+        margin: 0 33%;
+        border-top: 2px solid #a37e66;
+    }
+    .carousel-div img {
+        resize: both;
+        width: 260px;
+        height: auto;
+    }
+    .carousel-slide {
+        width: 260px;
+    }
+    .carousel-container {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .information {
+        margin-left: 10px;
+    }
+    .beratung {
+        margin-left: 7%;
+    }
+    .beraung {
+        margin-top: -1.5rem;
+    }
+    .descriptionTitle {
+        width: 140px;
+        text-align: center;
+        border-top: 2px solid #a37e66;
+        justify-content: center;
+        margin: 0 33%;
+    }
+    .containerbox {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .carousel-div {
+        /*  -webkit-transform: scale(.7);
+        transform: scale(.5); */
+    }
+    .carousel-div img {
+        resize: both;
+        width: 300px;
+        height: auto;
+    }
+    .carousel-slide {
+        width: 300px;
+    }
+    .carousel-container {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .information {
+        margin-left: 10px;
+    }
+    .information-text {
+        font-size: 20px;
+        width: 300px;
+    }
+   .beratung {
+    margin-left: 0;
+    margin-top: 5rem;
+}
+    body {
+        font-size: .7rem;
+    }
+    .containerbox {
+        margin-top: 3rem;
+    }
+    .description-text {
+        margin-top: 1rem;
+    }
+    .descriptionTitle {
+        width: 140px;
+        margin: 0 30%;
+        border-top: 2px solid #a37e66;
+    }
+    .carousel-div img {
+        resize: both;
+        width: 300px;
+        height: auto;
+    }
+    .carousel-slide {
+        width: 300px;
+    }
+    .carousel-container {
+        width: 300px;
+    }
+}

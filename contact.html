@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Developer personal website">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><!-- online searched not work-->
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <link rel="stylesheet" href="contact.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <div class="bg-img">
+    <div class="container">
+        <div class="topnav">
+        <a href="index.html">Startseite</a>
+        <a href="index.html#masks">Masken</a>
+        <a href="index.html#contact">Kontakt</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="header">
+      <h4><i class="fa fa-envelope"> </i>Bitte hinterlassen Sie uns eine Nachricht, wir werden uns bei Ihnen zurückmelden!
+      </h4> </i>
+    </div>
+<!-- action 属性定义了在提交表单时,应该把所收集的数据送给谁(/那个模块)(URL)去处理。-->
+            <form  action="https://formspree.io/Dengbaohuilea@gmail.com" method="post">
+            <div>
+              <!-- 意在所有<label>元素上使用for属性；它是将标签链接到表单小部件的一种正规方式。
+              这个属性引用对应的小部件的id。这样做有一些好处。最明显的一个好处是允许用户单击标签以激活相应的小部件-->
+              <label class="labelName" for="name">Name:</label>
+              <input type="text" id="name" name="user_name">
+            </div>
+              <div>
+                <!-- name="user_name" 在浏览器端，它告诉浏览器给数据各自哪个名称，在服务器端，它允许服务器按名称处理每个数据块-->
+              <label  class="labelEmail" for="mail">Deine Email:</label>
+              <input type="email" id="mail" name="user_email">
+              </div>
+              <div>
+              <label class="labelMessage" for="msg">Nachricht:</label>
+              <textarea id="msg" name="user_message"></textarea>
+              </div>
+              <div class="button">
+                <button type="submit"> Abschicken</button>
+              </div>
+            </form>
+
+            <section id="general" class="general">
+              <div class="boxcontainer">
+              <div class="box">
+                  <div class="boxtext">
+                    <h3> <a href="AGB.html">AGB</a></h3>
+                    <h3><a href="Impressum.html">Impressum</a></h3>
+                    <h3><a href="Datenschutz.html">Datenschutz</a></h3>
+                    <h3><a href="index.html#contact">Kontakt</a></h3>
+                  </div>
+              </div>
+          
+              <div class="box">
+                  <div class="boxtext">
+                  <h4 class="head">Best Adler GmbH</h4>
+                  <h4>Wir beraten und unterstützen Sie gerne persönlich. </h4>
+                  <h4>Rufen Sie uns an!</h4>
+                  <h4>017656737400</h4>
+                  <h4>www.bestadler.de</h4>
+                  </div>
+                  </div>
+          
+              </div>
+              </section>
+          
+                 <div class="footer text-center">
+                  <p> <i class="fa fa-copyright"></i> Best Adler GmbH 2020</p>
+                </div>
+
+
+
+  <body>
+
+
+ 
+
+
+
+
+  </body>
+</html>
