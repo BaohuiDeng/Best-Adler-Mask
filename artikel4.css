@@ -489,6 +489,10 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+        .topnav a {
+   
+    font-size: 17px;
+}
     .slider {
         width: 400px;
         text-align: center;
