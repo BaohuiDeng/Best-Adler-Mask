@@ -251,6 +251,10 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    .topnav a {
+   
+    font-size: 17px;
+}
     .boxcontainer {
         display: block;
         justify-content: center;
