@@ -50,9 +50,9 @@
             font-size: 20px;
         }                                                                                                                                                                                                                       }
 
-.topnav a:hover {
-    color: #b79b6c;
-}
+ .topnav a:hover {
+               color: #b79b6c;
+           }
 
 .slider {
     width: 500px;
