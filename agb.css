@@ -167,7 +167,7 @@ p {
 
         @media screen and (max-width: 1024px) {
               .title {
-    margin: -8rem auto;
+    margin: -5rem auto;
     text-align: center;
     position: absolute;
     left: 50%;
@@ -179,7 +179,7 @@ p {
 .back-icon {
     justify-content: center;
     text-align: center;
-    margin-top: -12rem;
+    margin-top: -8rem;
     margin-bottom: 2rem;
     font-weight: bold;
     font-size: 1.4rem;
