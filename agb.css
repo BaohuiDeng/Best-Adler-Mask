@@ -42,7 +42,8 @@
 
 .topnav a {
     float: left;
-    color: #393b40;
+    color: black;
+    opacity:0.8;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
