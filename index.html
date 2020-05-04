@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <body>
-    <div class="bg-img">
+ <div class="bg-img">
         <div class="container">
-            <div class="topnav">
-                <a href="http://fengle-medical.de">Startseite</a>
+            <div class="topnav" id="myTopnav">
+                <a href="http://fengle-medical.de" class="active">Startseite</a>
                 <a href="http://fengle-medical.de/#masks">Masken</a>
                 <a href="http://fengle-medical.de/zertifikat.html">Unsere Zertifikat</a>
                 <a href="http://fengle-medical.de/#contact">Kontakt</a>
-
-            </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
         </div>
     </div>
 
@@ -205,7 +205,16 @@
         </div>
 
 
-
+ <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 
     </body>
 
