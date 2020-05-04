@@ -3,7 +3,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Web Developer personal website">
     <meta name="viewport" content="width=device-width,initial-scale=1"><!-- online searched not work-->
     <meta name="viewport" content="width=500, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -14,18 +13,18 @@
       <title>fengle-medical</title>
 
   </head>
+  <body>
 <div class="bg-img">
         <div class="container">
-             <div class="topnav">
-                <a href="http://fengle-medical.de">Startseite</a>
+            <div class="topnav" id="myTopnav">
+                <a href="http://fengle-medical.de" class="active">Startseite</a>
                 <a href="http://fengle-medical.de/#masks">Masken</a>
-                               <a href="http://fengle-medical.de/zertifikat.html">Unsere Zertifikat</a>
-
+                <a href="http://fengle-medical.de/zertifikat.html">Unsere Zertifikat</a>
                 <a href="http://fengle-medical.de/#contact">Kontakt</a>
-            </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
         </div>
     </div>
-
     <div class="header">
       <h4><i class="fa fa-envelope"> </i>Bitte hinterlassen Sie uns eine Nachricht, wir werden uns bei Ihnen zurückmelden!
       </h4> </i>
@@ -83,11 +82,19 @@
 
 
 
-  <body>
 
 
  
-
+ <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 
 
 
