@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.text-bold{
+span .text-bold{
     font-weight:bold;
     color:black;
 }
